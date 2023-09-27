@@ -78,8 +78,6 @@ export class HomePage {
 
   inserirAluno(dados: any){
     this.aluno.nome = dados.nome;
-    // this.aluno.idade = 10;
-    // this.aluno.ra = 321321;
 
     this._crudService.insert(this.aluno, 'alunos');
   }
@@ -90,7 +88,6 @@ export class HomePage {
       this.alunos = alunos;
     })
   }
-
 
   removerAluno(aluno: any){
     console.log(aluno);
